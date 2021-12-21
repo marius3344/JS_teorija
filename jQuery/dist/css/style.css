@@ -1,0 +1,46 @@
+body {
+    background-color: lightblue;
+}
+
+#title {
+    background-color: blue;
+    margin: 0;
+}
+
+#text {
+    background-color: lightcoral;
+    margin: 0;
+}
+
+#button {
+    width: 100px;
+    height: 30px;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: absolute;
+    left: 10px;
+    top: 200px;
+}
+
+.box1 {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    position: absolute;
+    left: 10px;
+    top: 400px;
+}
+
+.green {
+    background-color: green;
+}
+
+.static {
+    position: static;
+}
