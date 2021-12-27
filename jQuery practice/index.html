@@ -21,10 +21,34 @@
         <!-- Pasislepiantis meniu su dropdown -->
         <div class="navbar">
             <ul class="menuItems">
-                <li><a href="#">Pagrindinis</a></li>
-                <li><a href="#">Apie mus</a></li>
-                <li><a href="#">Kontaktai</a></li>
-                <li><a id="toSection2" href="#section2">Forma</a></li>
+                <li id="menuMain"><a href="#">Pagrindinis</a>
+                    <ul id="main"class="dropdown">
+                        <li><a href="#"> Link1</a></li>
+                        <li><a href="#"> Link2</a></li>
+                        <li><a href="#"> Link3</a></li>
+                    </ul>
+                </li>
+                <li id="aboutMenu"><a href="#">Apie mus</a>
+                    <ul id="about" class="dropdown">
+                        <li><a href="#"> Link1</a></li>
+                        <li><a href="#"> Link2</a></li>
+                        <li><a href="#"> Link3</a></li>
+                    </ul>
+                </li>
+                <li id="contactsMenu"><a href="#">Kontaktai</a>
+                    <ul id="contacts" class="dropdown">
+                        <li><a href="#"> Link1</a></li>
+                        <li><a href="#"> Link2</a></li>
+                        <li><a href="#"> Link3</a></li>
+                    </ul>
+                </li>
+                <li id="formMenu"><a id="toSection2" href="#section2">Forma</a>
+                    <ul id="dataForm" class="dropdown">
+                        <li><a href="#"> Link1</a></li>
+                        <li><a href="#"> Link2</a></li>
+                        <li><a href="#"> Link3</a></li>
+                    </ul>
+                </li>
             </ul>
             <div class="button">
                 <i id="arrow" class="fas fa-arrow-up"></i>
@@ -77,7 +101,7 @@
     <section id="section2" class="section">
         <!-- Forma -->
         <h1>Duomenų įvedimo forma</h1>
-        <form id="form" action="">
+        <form id="form" action="" autocomplete="off">
             <label for="firstName">First name</label>
             <input type="text" name="firstName">
             <label for="email">Email</label>
@@ -85,11 +109,17 @@
             <input id="submit" type="submit" value="Įvesti">
 
         </form>
-        <!-- Duomenu listas -->
+        <div class="buttonsContainer">
+            <!-- Duomenu listas -->
+            <ol id="list">
 
-        <!-- Mygtukas valyti listą -->
-
-        <!-- Mygtukas trinti duomenis -->
+            </ol>
+            <!-- Mygtukas valyti listą -->
+            <button id="clearList">Slėpti sąrašą</button>
+            <button id="showArray">Rodyti sąrašą</button>
+            <!-- Mygtukas trinti duomenis -->
+            <button id="clearArray">Ištrinti duomenis</button>
+        </div>
     </section>
 
 
