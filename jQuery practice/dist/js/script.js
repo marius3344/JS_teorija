@@ -109,3 +109,54 @@ $(document).ready(function(){
     });
     
 });
+
+
+$(document).ready(function(){
+    const names = [
+        "Petras",
+        "Jonas",
+        "Antanas"
+    ];
+
+    const lastNames = [
+        "Petrauskas",
+        "Jonauskas",
+        "Antanauskas"
+    ];
+
+    const ages = [
+        21,
+        32,
+        56
+    ];
+    
+    let tableStart = "<table>";
+    let tableEnd = "</table>";
+    let rowStart = "<tr>";
+    let rowEnd = "</tr>";
+    let dataStart = "<td>";
+    let dataEnd = "</td>";
+    let header = rowStart + "<th>Name</th><th>Last Name</th><th>Age</th>"+rowEnd;
+
+    $("#showTable").click(function(){
+        let table = $("#table");
+        if(table.is(":empty")){
+            table.append(tableStart, header);
+            for (let i = 0; i<names.length; i++){
+                table.append(rowStart+dataStart+names[i]+dataEnd+dataStart+lastNames[i]+dataEnd+dataStart+ages[i]+dataEnd+rowEnd);
+            }
+            table.append(tableEnd);
+        }
+    });
+
+    //2var
+
+    for (let i = 0; i<names.length; i++){
+        $("#table2").append("<tr><td>"+names[i]+"</td><td>"+lastNames[i]+"</td><td>"+ages[i]+"</td></tr>");
+    }
+});
+
+// Name | Last Name | Age
+// .....|...........|....
+
+

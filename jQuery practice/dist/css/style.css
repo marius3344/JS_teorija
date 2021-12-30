@@ -153,4 +153,10 @@ input {
     margin-bottom: 5px;
 }
 
+#table table, tr, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 2px;
+}
+
 
